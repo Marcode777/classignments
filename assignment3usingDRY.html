@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+<script>
+  function Pet(sleepy, noise){
+    this.sleepy = sleepy;
+    this.noise = noise;
+    this.makeNoise = function (){
+      if(this.sleepy === false){
+        console.log(this.noise);
+      }
+    }
+
+  }
+    var poodle = new Pet(false,'woof');
+    var cat = new Pet (false, 'meow');
+    var cow = new Pet (false, 'moo');
+    var bird = new Pet (false, 'tweet');
+
+    // if we want all animals to make sounds, or even if we add new ones, just make them go through an array 
+    //var random animals = [poodle, cat, cow, bird] 
+    //function noiseAnimals () {
+      for (var i = 0; i < noiseAnimals.length; i++){
+        randomAnimals[i].makeNoise
+      }
+    }
+
+
+        var poodle = {
+    sleepy: false,
+    noise: 'woof',
+    makeNoise: function( ){
+        if (!this.sleepy){
+      alert(this.noise);
+      }
+    }
+  }
+
+    var cat = {
+    sleepy: false,
+    noise: 'meow',
+    makeNoise: function( ){
+        if (!this.sleepy){
+      alert(cat.noise);
+      }
+    }
+  }
+
+  bird.makeNoise();
+  cow.makeNoise();
+  poodle.makeNoise();
+  cat.makeNoise();
+
+
+  //Mike Wenger's answer function Pet(sleepy, noise){
+//     this.sleepy = sleepy;
+//     this.noise = noise;
+//     this.makeNoise = function(){
+//         if(this.sleepy === false){
+//             console.log(this.noise);
+//         }
+//     }
+// }
+
+// var poodle = new Pet(false, 'woof');
+// var cat = new Pet(false, 'meow');
+// var cow = new Pet(false, 'moo');
+// var bird = new Pet(false, 'tweet');
+</script>
+</body>
+</html>
+
